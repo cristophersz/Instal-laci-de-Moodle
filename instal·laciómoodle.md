@@ -1,11 +1,10 @@
-#INSTAL·LACIÓ DEl LAMP
+## INSTAL·LACIÓ DEl LAMP
 
 Abans de instal·lar moodel hem de instal·lar un LAMP.
 
 jo en aquest cas he utilitzat el Apache:
 
 sudo apt-get install apache2
-
 
 ![image](https://user-images.githubusercontent.com/116022089/204258593-caffb899-9b14-4082-aad1-dd7f6b5f8194.png)
 
@@ -35,7 +34,7 @@ sudo apt-get install php7.3 -y
 
 ![image](https://user-images.githubusercontent.com/116022089/204263350-45c07482-7d90-4338-9a95-288bdca286cd.png)
 
-#INSTAL·LACIÓ DEl MOODLE
+## INSTAL·LACIÓ DEl MOODLE
 
 1. Primer descarreguem Moodle amb la següent comanda.
 
@@ -49,7 +48,7 @@ sudo unzip moodle-latest-400.zip -d /var/www/html/
 
 ![image](https://user-images.githubusercontent.com/116022089/204264257-161160c3-70e4-4faf-b7ea-b3329fe351d1.png)
 
-#CREACIÓ DEL DIRECTORI DE FIXERS
+## CREACIÓ DEL DIRECTORI DE FIXERS
 
 Moodle utilitza un directori per desar fitxers dels usuaris, és recomanable que aquest directori no estigui al mateix directori que el servidor web, però ha de ser un directori amb accés per part del navegador.
 
@@ -57,7 +56,7 @@ Nosaltres, per exemple, crearem el directori moodledata en home.
 
 ![image](https://user-images.githubusercontent.com/116022089/204264770-fa61c138-5941-4c20-a607-3701cf2d8e2c.png)
 
-#CONFIGURAR LA BASE DE DADES
+## CONFIGURAR LA BASE DE DADES
 
 Accedeix a la base de dades amb:
 
@@ -84,7 +83,7 @@ FLUSH PRIVILEGES;
 
 ![image](https://user-images.githubusercontent.com/116022089/204275194-16d1f716-c0a0-44ee-9472-a5219b1b7876.png)
 
-#CONFIGURAR MOODLE 
+## CONFIGURAR MOODLE 
 
 Ara obrirem el navegador i hem d'anar al directori on hem guardat Moodle, si ha estat a /var/www/html simplement escriurem al navegador http://192.168.xxx.xxx/moodle/install.php (la vostar ip).
 
