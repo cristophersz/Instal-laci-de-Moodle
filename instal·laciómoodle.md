@@ -111,5 +111,23 @@ I després recarregar el servidor web, en el nostre cas en ser Apache:
 
 ![image](https://user-images.githubusercontent.com/116022089/204302412-3c1dfc99-5857-4eb4-809b-acf9b82b978e.png)
 
+# Error i solució al error
+
+Al instalar el curl i el zip continua demanant la instal·lació del curl i el zip:
+
+![image](https://user-images.githubusercontent.com/116022089/204332804-f9ca6366-f831-4836-99b0-762833598a19.png)
+
+Per a solucionar el error el que haurem de fer es instal·lar el curl i el zip incloent en la comanda la versió que hem descarregat anteriorment el php, en aquest cas es la 7.3
+
+sudo apt install php7.3-curl
+
+![image](https://user-images.githubusercontent.com/116022089/204333598-918e53a5-8506-41ae-96f2-05b9818e60b9.png)
+
+sudo apt install php7.3-zip
+
+![image](https://user-images.githubusercontent.com/116022089/204333800-c112dd72-9392-4aa6-a7f4-f26e56952174.png)
+
+
+
 
 
