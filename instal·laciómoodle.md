@@ -71,6 +71,25 @@ CREATE USER 'moodlemanager'@'localhost' IDENTIFIED BY 'managermoodle';
 
 ![image](https://user-images.githubusercontent.com/116022089/204266678-2d76ca65-c3a1-4835-9747-4e8c9bb42ddf.png)
 
+I creem la base de dades per a l'ús de moodle:
+
+CREATE DATABASE moodle;
+
+![image](https://user-images.githubusercontent.com/116022089/204274809-8d7bd255-e6f3-451a-8463-4b55c12f78ef.png)
+
+Finalment, concedeix control sobre la base de dades moodle a l'usuari moodlemanager que hem creat abans:
+
+GRANT ALL PRIVILEGES ON moodle.* TO 'moodlemanager'@'localhost';
+FLUSH PRIVILEGES;
+
+![image](https://user-images.githubusercontent.com/116022089/204275194-16d1f716-c0a0-44ee-9472-a5219b1b7876.png)
+
+#CONFIGURAR MOODLE 
+
+
+
+
+
 
 
 
