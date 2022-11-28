@@ -18,7 +18,7 @@ De seguit executarem la configuració de mariaDB amb la següent comanda:
 
 ❖ sudo mysql_secure_installation
 
-i la cponfigurem de la seguent manera:
+i la configurem de la seguent manera:
 
 ![image](https://user-images.githubusercontent.com/116022089/204261543-3f689f6f-1aab-44eb-aa23-513ecd882215.png)
 
