@@ -1,4 +1,4 @@
-#INSTAL·LACIÓ DE MOODLE
+#INSTAL·LACIÓ DEl LAMP
 
 Abans de instal·lar moodel hem de instal·lar un LAMP.
 
@@ -35,6 +35,7 @@ sudo apt-get install php7.3 -y
 
 ![image](https://user-images.githubusercontent.com/116022089/204263350-45c07482-7d90-4338-9a95-288bdca286cd.png)
 
+#INSTAL·LACIÓ DEl MOODLE
 
 1. Primer descarreguem Moodle amb la següent comanda.
 
@@ -45,3 +46,32 @@ wget https://download.moodle.org/download.php/direct/stable400/moodle-latest-400
 2. Després descomprimim l'artxiu.
 
 sudo unzip moodle-latest-400.zip -d /var/www/html/
+
+![image](https://user-images.githubusercontent.com/116022089/204264257-161160c3-70e4-4faf-b7ea-b3329fe351d1.png)
+
+#CREACIÓ DEL DIRECTORI DE FIXERS
+
+Moodle utilitza un directori per desar fitxers dels usuaris, és recomanable que aquest directori no estigui al mateix directori que el servidor web, però ha de ser un directori amb accés per part del navegador.
+
+Nosaltres, per exemple, crearem el directori moodledata en home.
+
+![image](https://user-images.githubusercontent.com/116022089/204264770-fa61c138-5941-4c20-a607-3701cf2d8e2c.png)
+
+#CONFIGURAR LA BASE DE DADES
+
+Accedeix a la base de dades amb:
+
+sudo mysql -u root -p
+
+![image](https://user-images.githubusercontent.com/116022089/204266136-eb94773f-3e30-4706-87bc-32b77090e948.png)
+
+Crearem un usuari per a moodle, per exemple moodlemanager:
+
+CREATE USER 'moodlemanager'@'localhost' IDENTIFIED BY 'managermoodle';
+
+![image](https://user-images.githubusercontent.com/116022089/204266678-2d76ca65-c3a1-4835-9747-4e8c9bb42ddf.png)
+
+
+
+
+
