@@ -86,11 +86,31 @@ FLUSH PRIVILEGES;
 
 #CONFIGURAR MOODLE 
 
+Ara obrirem el navegador i hem d'anar al directori on hem guardat Moodle, si ha estat a /var/www/html simplement escriurem al navegador http://192.168.xxx.xxx/moodle/install.php (la vostar ip).
 
+![image](https://user-images.githubusercontent.com/116022089/204298571-1c35edfe-28fb-4577-915e-9d7d99ee789d.png)
 
+Just després Moodle farà una comprovació de requisits, en el nostre cas es troba que falten dos mòduls de PHP que necessitarà Moodle: curl i zip
 
+![image](https://user-images.githubusercontent.com/116022089/204299291-820672b1-5a4e-444e-b0ca-ae15940ced55.png)
 
+Com hem instal·lat PHP només hem de buscar en aptitude els paquets indicats, per a curl:
 
+sudo apt install php-curl
+
+![image](https://user-images.githubusercontent.com/116022089/204299723-4a31b06d-a5e9-4506-8173-d746b68fa0cd.png)
+
+I per a zip:
+
+sudo apt install php-zip
+
+![image](https://user-images.githubusercontent.com/116022089/204300482-5260593a-f841-45fc-81cd-85ef8aa6eace.png)
+
+I després recarregar el servidor web, en el nostre cas en ser Apache:
+
+sudo service apache2 reload
+
+![image](https://user-images.githubusercontent.com/116022089/204302412-3c1dfc99-5857-4eb4-809b-acf9b82b978e.png)
 
 
 
