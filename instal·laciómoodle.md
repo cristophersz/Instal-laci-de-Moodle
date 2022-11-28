@@ -141,5 +141,90 @@ Després seleccionarem el controlador de dades:
 
 ![image](https://user-images.githubusercontent.com/116022089/204335917-2e8c7772-b29e-41d0-bea0-265935b740d2.png)
 
+continuarem instal·lant el mbstring:
+
+sudo apt install php7.3-mbstring i després reiniciem el apache2
+
+Abans:
+
+![image](https://user-images.githubusercontent.com/116022089/204357703-8e05bb6a-f7ba-4013-8371-9550687d630d.png)
+
+Després:
+
+![image](https://user-images.githubusercontent.com/116022089/204359810-45f29087-3822-468d-8e78-37e02822e132.png)
+
+## Solució als estats del servidor 
+
+Ens avisen dels següents errors:
+
+![image](https://user-images.githubusercontent.com/116022089/204360300-d30a54ca-1c37-49d3-a378-14f364718016.png)
+
+I per a solucionar els haurem de instal·lar per separat ja que són extensions.
+
+sudo apt install php7.3-gd
+
+![image](https://user-images.githubusercontent.com/116022089/204360538-a7a81f28-1da0-4cc7-aeec-fc68d352f2df.png)
+
+sudo apt install php7.3-intl
+
+![image](https://user-images.githubusercontent.com/116022089/204360756-a7f5d272-57b2-474b-b272-58200abcc826.png)
+
+sudo apt install php7.3-xmlrpc
+
+![image](https://user-images.githubusercontent.com/116022089/204361069-d3ed2619-0590-4b3f-9e4d-9bc4a3f5a065.png)
+
+sudo apt install php7.3-soap
+
+![image](https://user-images.githubusercontent.com/116022089/204361238-fa8220a4-b148-46e2-85de-446f115fda93.png)
+
+Al finalitzar reiniciem el servidor apache
+
+![image](https://user-images.githubusercontent.com/116022089/204361387-1a5d58f5-7d01-4eea-b2bc-f1ca58dd046b.png)
+
+![image](https://user-images.githubusercontent.com/116022089/204361638-de8e0ff5-199f-4922-b918-228ce6cf8ac6.png)
+
+A continuació abans de continuar ens aparexen dos avisos més per últim 
+
+![image](https://user-images.githubusercontent.com/116022089/204362350-20ab9f6b-71c2-479b-8d93-38aa07adb97e.png)
+
+El primer avis és de converitr el http a htpps pero en aquesta vegada no ens interesa canviar aixo, el que si canviarem es el avis del input vars que esn recomana ficar 5000, per a canviar aixo haurem d'accedir al arxiu:
+
+sudo nano /etc/php/7.3/apache2/php.ini
+
+i buscarem la linia del max_input_vars, la descomentarem i li canviem el número:
+
+![image](https://user-images.githubusercontent.com/116022089/204362911-737856e8-73fd-4e2e-a0c6-682af2b197ba.png)
+
+després d'haver fet aixo reiniciem el Apache2.
+
+![image](https://user-images.githubusercontent.com/116022089/204363062-543edb47-1ae8-4a17-89d1-43dbbba66d59.png)
+
+Al clicar continuar començara la instal·lació:
+
+![image](https://user-images.githubusercontent.com/116022089/204363155-92bdfd27-ed5f-4d3c-8e46-2d29e54b74f1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
