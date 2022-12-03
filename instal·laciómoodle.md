@@ -119,11 +119,11 @@ Al instalar el curl i el zip continua demanant la instal·lació del curl i el z
 
 Per a solucionar el error el que haurem de fer es instal·lar el curl i el zip incloent en la comanda la versió que hem descarregat anteriorment el php, en aquest cas es la 7.3
 
-sudo apt install php7.3-curl
+❖ sudo apt install php7.3-curl
 
 ![image](https://user-images.githubusercontent.com/116022089/204333598-918e53a5-8506-41ae-96f2-05b9818e60b9.png)
 
-sudo apt install php7.3-zip
+❖ sudo apt install php7.3-zip
 
 ![image](https://user-images.githubusercontent.com/116022089/204333800-c112dd72-9392-4aa6-a7f4-f26e56952174.png)
 
@@ -143,7 +143,7 @@ Després seleccionarem el controlador de dades:
 
 continuarem instal·lant el mbstring:
 
-sudo apt install php7.3-mbstring i després reiniciem el apache2
+❖ sudo apt install php7.3-mbstring i després reiniciem el apache2
 
 Abans:
 
@@ -161,19 +161,19 @@ Ens avisen dels següents errors:
 
 I per a solucionar els haurem de instal·lar per separat ja que són extensions.
 
-sudo apt install php7.3-gd
+❖ sudo apt install php7.3-gd
 
 ![image](https://user-images.githubusercontent.com/116022089/204360538-a7a81f28-1da0-4cc7-aeec-fc68d352f2df.png)
 
-sudo apt install php7.3-intl
+❖ sudo apt install php7.3-intl
 
 ![image](https://user-images.githubusercontent.com/116022089/204360756-a7f5d272-57b2-474b-b272-58200abcc826.png)
 
-sudo apt install php7.3-xmlrpc
+❖ sudo apt install php7.3-xmlrpc
 
 ![image](https://user-images.githubusercontent.com/116022089/204361069-d3ed2619-0590-4b3f-9e4d-9bc4a3f5a065.png)
 
-sudo apt install php7.3-soap
+❖ sudo apt install php7.3-soap
 
 ![image](https://user-images.githubusercontent.com/116022089/204361238-fa8220a4-b148-46e2-85de-446f115fda93.png)
 
@@ -189,7 +189,7 @@ A continuació abans de continuar ens aparexen dos avisos més per últim
 
 El primer avis és de converitr el http a htpps pero en aquesta vegada no ens interesa canviar aixo, el que si canviarem es el avis del input vars que esn recomana ficar 5000, per a canviar aixo haurem d'accedir al arxiu:
 
-sudo nano /etc/php/7.3/apache2/php.ini
+❖ sudo nano /etc/php/7.3/apache2/php.ini
 
 i buscarem la linia del max_input_vars, la descomentarem i li canviem el número:
 
