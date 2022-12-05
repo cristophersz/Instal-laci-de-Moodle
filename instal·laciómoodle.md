@@ -203,28 +203,17 @@ Al clicar continuar començara la instal·lació:
 
 ![image](https://user-images.githubusercontent.com/116022089/204363155-92bdfd27-ed5f-4d3c-8e46-2d29e54b74f1.png)
 
+En aquest apartat configurarem la instal·lació del administrador:
 
+![image](https://user-images.githubusercontent.com/116022089/205687593-c4e3db42-d056-487f-8cb8-5aabd04d64a9.png)
 
+En el següent apartat podem ajustar la home del lloc:
 
+![image](https://user-images.githubusercontent.com/116022089/205688669-e30d017c-3048-49be-aeaf-5a2dbfa7c884.png)
 
+![image](https://user-images.githubusercontent.com/116022089/205688935-efac0953-709f-4055-88a6-958ab5391a54.png)
 
+Després cpmfigurar tot en portara al nostre home:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/116022089/205692462-3709f95e-4e4e-4673-bf3d-d7259935434b.png)
 
